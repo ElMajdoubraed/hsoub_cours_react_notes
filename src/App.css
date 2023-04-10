@@ -2,7 +2,26 @@ body {
   background-image: url(./hsoub-logo.png);
   background-position: 95% 17px;
   background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-bg);
+  line-height: 1.7;
   background-size: 125px 40px;
+}
+
+:root {
+  --color-bg: #010b13;
+  --color-bg-variant: #80800027;
+  --color-primary: #d3af37;
+  --color-primary-variant: #1b1b1b;
+  --color-white: #fff;
+  --color-light: #fadadd;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
 
 .App {
@@ -34,7 +53,7 @@ body {
   width: 45px;
   height: 45px;
   line-height: 28px;
-  background-color: #c82333;
+  background-color: var(--color-primary);
   text-align: center;
   border-radius: 50%;
   font-size: 30px;
@@ -47,7 +66,7 @@ body {
 }
 
 .add-btn:hover {
-  background-color: #dc3545;
+  background-color: var(--color-primary-variant);
 }
 
 .notes-list {
@@ -65,7 +84,7 @@ body {
 }
 
 .note-item.active {
-  background-color: #573d7d;
+  background-color: var(--color-bg);
 }
 
 .form-input {
@@ -97,7 +116,7 @@ body {
 }
 
 .note-operations a :hover {
-  color: #28a745;
+  color: var(--color-primary-variant);
 }
 
 .button {
@@ -110,12 +129,12 @@ body {
   font-size: 20px;
 }
 
-.green {
-  background: #28a745;
+.btn-primary {
+  background: var(--color-primary);
 }
 
-.green:hover {
-  background: #083f15;
+.btn-primary:hover {
+  background: var(--color-primary-variant);
 }
 
 .center {

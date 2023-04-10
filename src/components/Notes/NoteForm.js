@@ -32,7 +32,7 @@ const NoteForm = (props) => {
           value={content}
         />
 
-        <a href="#" className="button green" onClick={submitClicked}>
+        <a href="#" className="button btn-primary" onClick={submitClicked}>
           {submitText}
         </a>
       </div>
